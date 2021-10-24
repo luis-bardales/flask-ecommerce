@@ -11,12 +11,12 @@
     <meta name="author" content="D-THEMES">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icons/favicon.png') }}">
     <!-- Preload Font -->
-    <link rel="preload" href="fonts/riode.ttf?5gap68" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="vendor/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
+    <link rel="preload" href="{{ url_for('static', filename='fonts/riode.ttf?5gap68') }}" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="{{ url_for('static', filename='vendor/fontawesome-free/webfonts/fa-solid-900.woff2') }}" as="font" type="font/woff2"
         crossorigin="anonymous">
-    <link rel="preload" href="vendor/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
+    <link rel="preload" href="{{ url_for('static', filename='vendor/fontawesome-free/webfonts/fa-brands-400.woff2') }}" as="font" type="font/woff2"
         crossorigin="anonymous">
     <script>
         WebFontConfig = {
@@ -24,24 +24,24 @@
         };
         ( function ( d ) {
             var wf = d.createElement( 'script' ), s = d.scripts[ 0 ];
-            wf.src = 'js/webfont.js';
+            wf.src = '{{ url_for("static", filename="js/webfont.js") }}';
             wf.async = true;
             s.parentNode.insertBefore( wf, s );
         } )( document );
     </script>
 
 
-    <link rel="stylesheet" type="text/css" href="vendor/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/animate/animate.min.css') }}">
 
     <!-- Plugins CSS File -->
-    <link rel="stylesheet" type="text/css" href="vendor/magnific-popup/magnific-popup.min.css">
-    <link rel="stylesheet" type="text/css" href="vendor/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/magnific-popup/magnific-popup.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/owl-carousel/owl.carousel.min.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="vendor/sticky-icon/stickyicon.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/sticky-icon/stickyicon.css') }}">
 
     <!-- Main CSS File -->
-    <link rel="stylesheet" type="text/css" href="css/demo2.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/demo2.min.css') }}">
 </head>
 
 <body class="home">
@@ -94,7 +94,7 @@
                             <i class="d-icon-bars2"></i>
                         </a>
                         <a href="demo2.html" class="logo">
-                            <img src="images/demos/demo2/logo.png" alt="logo" width="153" height="44" />
+                            <img src="{{ url_for('static', filename='images/demos/demo2/logo.png') }}" alt="logo" width="153" height="44" />
                         </a>
                         <!-- End Logo -->
 
@@ -136,7 +136,7 @@
                                     <div class="product product-wishlist">
                                         <figure class="product-media">
                                             <a href="product.html">
-                                                <img src="images/wishlist/product-1.jpg" width="100" height="100"
+                                                <img src="{{ url_for('static', filename='images/wishlist/product-1.jpg') }}" width="100" height="100"
                                                     alt="product" />
                                             </a>
                                             <button class="btn btn-link btn-close">
@@ -154,7 +154,7 @@
                                     <div class="product product-wishlist">
                                         <figure class="product-media">
                                             <a href="product.html">
-                                                <img src="images/wishlist/product-2.jpg" width="100" height="100"
+                                                <img src="{{ url_for('static', filename='images/wishlist/product-2.jpg') }}" width="100" height="100"
                                                     alt="product" />
                                             </a>
                                             <button class="btn btn-link btn-close">
@@ -173,7 +173,7 @@
                                     <div class="product product-wishlist">
                                         <figure class="product-media">
                                             <a href="product.html">
-                                                <img src="images/wishlist/product-3.jpg" width="100" height="100"
+                                                <img src="{{ url_for('static', filename='images/wishlist/product-3.jpg') }}" width="100" height="100"
                                                     alt="product" />
                                             </a>
                                             <button class="btn btn-link btn-close">
@@ -210,7 +210,7 @@
                                     <div class="product product-cart">
                                         <figure class="product-media">
                                             <a href="product.html">
-                                                <img src="images/cart/product-1.jpg" alt="product" width="80"
+                                                <img src="{{ url_for('static', filename='images/cart/product-1.jpg') }}" alt="product" width="80"
                                                     height="88" />
                                             </a>
                                             <button class="btn btn-link btn-close">
@@ -356,7 +356,7 @@
                                             <div
                                                 class="col-6 col-sm-4 col-md-4 col-lg-3 menu-banner menu-banner1 banner banner-fixed">
                                                 <figure>
-                                                    <img src="images/menu/banner-1.jpg" alt="Menu banner" width="221"
+                                                    <img src="{{ url_for('static', filename='images/menu/banner-1.jpg') }}" alt="Menu banner" width="221"
                                                         height="330" />
                                                 </figure>
                                                 <div class="banner-content y-50">
@@ -427,7 +427,7 @@
                                             <div
                                                 class="col-6 col-sm-4 col-md-3 menu-banner menu-banner2 banner banner-fixed">
                                                 <figure>
-                                                    <img src="images/menu/banner-2.jpg" alt="Menu banner" width="221"
+                                                    <img src="{{ url_for('static', filename='images/menu/banner-2.jpg') }}" alt="Menu banner" width="221"
                                                         height="330" />
                                                 </figure>
                                                 <div class="banner-content x-50 text-center">
@@ -629,7 +629,7 @@
                                     <div class="banner banner-fixed intro-slide1 content-center content-middle"
                                         style="background-color: #444342;">
                                         <figure>
-                                            <img src="images/demos/demo2/slides/1.jpg" alt="intro-banner" width="1180"
+                                            <img src="{{ url_for('static', filename='images/demos/demo2/slides/1.jpg') }}" alt="intro-banner" width="1180"
                                                 height="600" style="background-color: #444342;" />
                                         </figure>
                                         <div class="banner-content">
@@ -648,7 +648,7 @@
 
                                     <div class="intro-slide2 banner banner-fixed">
                                         <figure>
-                                            <img src="images/demos/demo2/slides/2.jpg" alt="banner" width="1180"
+                                            <img src="{{ url_for('static', filename='images/demos/demo2/slides/2.jpg') }}" alt="banner" width="1180"
                                                 height="600" style="background-color: #686868" />
                                         </figure>
                                         <div class="banner-content y-50">
@@ -680,7 +680,7 @@
                                     'delay': '.3s'
                                 }">
                                     <figure>
-                                        <img src="images/demos/demo2/banners/1.jpg" width="580" height="249"
+                                        <img src="{{ url_for('static', filename='images/demos/demo2/banners/1.jpg') }}" width="580" height="249"
                                             alt="banner" style="background-color: #eca5a9;" />
                                     </figure>
                                     <div class="banner-content">
@@ -704,7 +704,7 @@
                                     'delay': '.5s'
                                 }">
                                     <figure>
-                                        <img src="images/demos/demo2/banners/2.jpg" width="580" height="249"
+                                        <img src="{{ url_for('static', filename='images/demos/demo2/banners/2.jpg') }}" width="580" height="249"
                                             alt="banner" style="background-color: #494442;" />
                                     </figure>
                                     <div class="banner-content">
@@ -1946,15 +1946,15 @@
 		</div>
 	</div>
 	<!-- Plugins JS File -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="vendor/elevatezoom/jquery.elevatezoom.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
-    <script src="vendor/skrollr/skrollr.min.js"></script>
-    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/elevatezoom/jquery.elevatezoom.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/skrollr/skrollr.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/owl-carousel/owl.carousel.min.js') }}"></script>
     <!-- Main JS File -->
-    <script src="js/main.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.min.js') }}"></script>
 </body>
 
 </html>
